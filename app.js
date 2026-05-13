@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const PORT = process.env.PORT || 3001;
 app.get("/", (req, res) => {
-  res.send("production deployment Successfully!");
+  res.send("production deployment active Successfully!");
 });
 app.get("/health", (req, res) => {
   res.status(200).json({
